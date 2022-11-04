@@ -7,3 +7,8 @@
 	path = OCA/operating-unit
 	url = git@github.com:OCA/operating-unit.git
 	branch = 14.0
+
+[submodule "d2isolutions/openeducat"]
+	path = d2isolutions/openeducat
+	url = git@github.com:d2isolutions/openeducat.git
+	branch = 14.0
