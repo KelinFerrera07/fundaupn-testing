@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="registration_assets_frontend" inherit_id="website.assets_frontend">
+            <xpath expr="script[last()]" position="after">
+                <script type="text/javascript" src="/openeducat_grievance_enterprise/static/src/js/custom.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_grievance_detail.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_all_grievance.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_grievance_submit.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_grievance_edit.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_grievance_delete.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_parent_grievance_detail.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_parent_all_grievance.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_parent_grievance_edit.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_parent_grievance_delete.js"/>
+                <script type="text/javascript"
+                        src="/openeducat_grievance_enterprise/static/tests/tours/test_gms_parent_grievance_submit.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<odoo>
+    <template id="inherit_assets_grading_backend" name="web_example_assets" inherit_id="web.assets_backend">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/openeducat_grading/static/src/js/grade_book_grid_view.js"/>
+            <script type="text/javascript" src="/openeducat_grading/static/src/js/gradebook_by_course.js"/>
+            <script type="text/javascript" src="/openeducat_grading/static/src/js/gradebook_by_batch.js"/>
+            <script type="text/javascript" src="/openeducat_grading/static/src/js/grade_book_by_subject.js"/>
+        </xpath>
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" href="/openeducat_grading/static/src/css/handsontable.full.min.css"/>
+            <link rel="stylesheet" href="/openeducat_grading/static/src/css/grid_view.css"/>
+        </xpath>
+    </template>
+    <template id="grading_assets_frontend"
+              inherit_id="website.assets_frontend">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/openeducat_grading/static/src/js/grade_book_portal.js"/>
+        </xpath>
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" href="/openeducat_grading/static/src/css/handsontable.full.min.css"/>
+            <link rel="stylesheet" href="/openeducat_grading/static/src/css/grid_view.css"/>
+        </xpath>
+    </template>
+</odoo>

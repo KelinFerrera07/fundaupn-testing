@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="secure_student_grade_report_single" inherit_id="openeducat_grading.single_col_report">
+            <xpath expr="//div[1]/span[2]" position="inside">
+                <img t-attf-src="data:image/*;base64,{{docs.generate_qrcode()}}"
+                     style="width:150px;height:150px;margin-left:130px;"/>
+                <t t-if="docs.type_qr_code()=='secure'">
+                    <div style="text-align:right;margin-right:10px;font-size:12px;">
+                        <span>To verify,</span>
+                    </div>
+                    <strong>
+                        <p style="text-align:right;margin-right:10px;font-size:12px;">
+                            <t t-esc="docs.get_web_url()"/>
+                        </p>
+                    </strong>
+                </t>
+            </xpath>
+        </template>
+        <template id="secure_student_grade_report_double" inherit_id="openeducat_grading.double_col_report">
+            <xpath expr="//div[1]/span[2]" position="inside">
+                <img t-attf-src="data:image/*;base64,{{docs.generate_qrcode()}}"
+                     style="width:150px;height:150px;margin-left:130px;"/>
+                <t t-if="docs.type_qr_code()=='secure'">
+                    <div style="text-align:right;margin-right:10px;font-size:12px;">
+                        <span>To verify,</span>
+                    </div>
+                    <strong>
+                        <p style="text-align:right;margin-right:10px;font-size:12px;">
+                            <t t-esc="docs.get_web_url()"/>
+                        </p>
+                    </strong>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>
+
