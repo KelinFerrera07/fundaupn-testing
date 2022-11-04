@@ -1,0 +1,24 @@
+<odoo>
+    <template id="inherit_assets_backend" name="web_example_assets" inherit_id="web.assets_backend">
+
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/lib/js/Chart.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/lib/js/Chart.min.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/lib/js/Chart.bundle.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/lib/js/Chart.bundle.min.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/src/js/formatting_function.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/src/js/widgets.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/src/js/date_widget.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/src/js/dashboard_pro.js"/>
+            <script type="text/javascript" src="/openeducat_dashboard_kpi/static/src/js/dashboard_pro_domain.js"/>
+        </xpath>
+
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" href="/openeducat_dashboard_kpi/static/lib/css/gridstack.min.css"/>
+            <link rel="stylesheet" href="/openeducat_dashboard_kpi/static/src/css/element.css"/>
+            <link rel="stylesheet" href="/openeducat_dashboard_kpi/static/src/css/grid_configuration.css"/>
+            <link rel="stylesheet" href="/openeducat_dashboard_kpi/static/src/css/main_dashboard.scss"/>
+        </xpath>
+
+    </template>
+</odoo>

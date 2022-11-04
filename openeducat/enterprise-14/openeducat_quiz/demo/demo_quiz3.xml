@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="op_qz_ctg_b" model="op.quiz.category">
+            <field name="name">Category Biology</field>
+            <field name="code">biology122</field>
+        </record>
+
+        <record id="op_qz_biology1" model="op.quiz">
+            <field name="name">Biology Quiz</field>
+            <field name="categ_id" ref="op_qz_ctg_b"/>
+            <field name="quiz_config">quiz_bank_selected</field>
+            <field name="time_config">True</field>
+            <field name="time_limit_hr">1</field>
+            <field name="time_limit_minute">30</field>
+            <field name="no_of_attempt">1</field>
+            <field name="description">This quiz is based on Biology Science.
+            </field>
+            <field name="state">open</field>
+            <field name="quiz_html">This quiz contains questions regarding biology.Biology is the study of life.
+                Biology is the study of life. The word "biology" is derived from the Greek words "bios" (meaning life)
+                and "logos" (meaning "study"). In general, biologists study the structure, function, growth, origin,
+                evolution and distribution of living organisms.
+            </field>
+        </record>
+        <record id="op_qu_bnk_type_biology1" model="op.question.bank.type">
+            <field name="name">Biology</field>
+        </record>
+        <record id="op_qu_bnk_b" model="op.question.bank">
+            <field name="name">Biology Test</field>
+            <field name="bank_type_id" ref="op_qu_bnk_type_biology1"/>
+        </record>
+        <record id="op_c_qb1" model="op.question.bank.line">
+            <field name="name">Which vein brings clean blood from the lungs into the heart?</field>
+            <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/jBt5jZSWhMI'"/>
+            <field name="document_id">jBt5jZSWhMI</field>
+            <field name="bank_id" ref="op_qu_bnk_b"/>
+        </record>
+        <record id="op_c_qb1_a01" model="op.question.bank.answer">
+            <field name="name">Renal Vein</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb1"/>
+        </record>
+        <record id="op_c_qb1_a02" model="op.question.bank.answer">
+            <field name="name">Pulmonary Vein</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="question_id" ref="op_c_qb1"/>
+        </record>
+        <record id="op_c_qb1_a03" model="op.question.bank.answer">
+            <field name="name">Vena Cava</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb1"/>
+        </record>
+        <record id="op_c_qb1_a04" model="op.question.bank.answer">
+            <field name="name">Hepatic Vein</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb1"/>
+        </record>
+
+        <record id="op_qz_ln6_b1" model="op.quiz.line">
+            <field name="name">Which vein brings clean blood from the lungs into the heart?</field>
+            <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/jBt5jZSWhMI'"/>
+            <field name="document_id">jBt5jZSWhMI</field>
+            <field name="quiz_id" ref="op_qz_biology1"/>
+            <field name="que_id" ref="op_c_qb1"/>
+        </record>
+
+        <record id="op_qz_ln6_b1_l01" model="op.quiz.answer">
+            <field name="name">Renal Vein</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b1"/>
+        </record>
+        <record id="op_qz_ln6_b1_l02" model="op.quiz.answer">
+            <field name="name">Pulmonary Vein</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="line_id" ref="op_qz_ln6_b1"/>
+        </record>
+        <record id="op_qz_ln6_b1_l03" model="op.quiz.answer">
+            <field name="name">Vena Cava</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b1"/>
+        </record>
+        <record id="op_qz_ln6_b1_l04" model="op.quiz.answer">
+            <field name="name">Hepatic Vein</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b1"/>
+        </record>
+
+
+        <record id="op_c_qb2" model="op.question.bank.line">
+            <field name="name">What is the smallest unit that can carry out life functions?
+            </field>
+             <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/srGKxnhkR5I'"/>
+            <field name="document_id">srGKxnhkR5I</field>
+            <field name="bank_id" ref="op_qu_bnk_b"/>
+        </record>
+        <record id="op_c_qb2_a01" model="op.question.bank.answer">
+            <field name="name">DNA</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb2"/>
+        </record>
+        <record id="op_c_qb2_a02" model="op.question.bank.answer">
+            <field name="name">Cell</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="question_id" ref="op_c_qb2"/>
+        </record>
+        <record id="op_c_qb2_a03" model="op.question.bank.answer">
+            <field name="name">Tissue</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb2"/>
+        </record>
+        <record id="op_c_qb2_a04" model="op.question.bank.answer">
+            <field name="name">None</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb2"/>
+        </record>
+
+        <record id="op_qz_ln6_b2" model="op.quiz.line">
+            <field name="name">What is the smallest unit that can carry out life functions?
+            </field>
+            <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/srGKxnhkR5I'"/>
+            <field name="document_id">srGKxnhkR5I</field>
+            <field name="quiz_id" ref="op_qz_biology1"/>
+            <field name="que_id" ref="op_c_qb2"/>
+        </record>
+
+        <record id="op_qz_ln6_b2_l01" model="op.quiz.answer">
+            <field name="name">DNA</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b2"/>
+        </record>
+        <record id="op_qz_ln6_b2_l02" model="op.quiz.answer">
+            <field name="name">Cell</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="line_id" ref="op_qz_ln6_b2"/>
+        </record>
+        <record id="op_qz_ln6_b2_l03" model="op.quiz.answer">
+            <field name="name">Tissue</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b2"/>
+        </record>
+        <record id="op_qz_ln6_b2_l04" model="op.quiz.answer">
+            <field name="name">None</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b2"/>
+        </record>
+
+        <record id="op_c_qb3" model="op.question.bank.line">
+            <field name="name">Photosynthesis takes place faster in?</field>
+            <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/KfvYQgT2M-k'"/>
+            <field name="document_id">KfvYQgT2M-k</field>
+            <field name="bank_id" ref="op_qu_bnk_b"/>
+        </record>
+        <record id="op_c_qb3_a01" model="op.question.bank.answer">
+            <field name="name">Yellow light</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb3"/>
+        </record>
+        <record id="op_c_qb3_a02" model="op.question.bank.answer">
+            <field name="name">White light</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb3"/>
+        </record>
+        <record id="op_c_qb3_a03" model="op.question.bank.answer">
+            <field name="name">Red light</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="question_id" ref="op_c_qb3"/>
+        </record>
+        <record id="op_c_qb3_a04" model="op.question.bank.answer">
+            <field name="name">Darkness</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="question_id" ref="op_c_qb3"/>
+        </record>
+
+        <record id="op_qz_ln6_b3" model="op.quiz.line">
+            <field name="name">Photosynthesis takes place faster in?</field>
+              <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/KfvYQgT2M-k'"/>
+            <field name="document_id">KfvYQgT2M-k</field>
+            <field name="quiz_id" ref="op_qz_biology1"/>
+            <field name="que_id" ref="op_c_qb3"/>
+        </record>
+
+        <record id="op_qz_ln6_b3_l01" model="op.quiz.answer">
+            <field name="name">Yellow light</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b3"/>
+        </record>
+        <record id="op_qz_ln6_b3_l02" model="op.quiz.answer">
+            <field name="name">White light</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="line_id" ref="op_qz_ln6_b3"/>
+        </record>
+        <record id="op_qz_ln6_b3_l03" model="op.quiz.answer">
+            <field name="name">Red light</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b3"/>
+        </record>
+        <record id="op_qz_ln6_b3_l04" model="op.quiz.answer">
+            <field name="name">Darkness</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b3"/>
+        </record>
+
+
+        <record id="op_c_qb4" model="op.question.bank.line">
+            <field name="name">Which of the following vitamins is needed for the process of blood clotting?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/eI8kZIqa-VU'"/>
+            <field name="document_id">eI8kZIqa-VU</field>
+            <field name="bank_id" ref="op_qu_bnk_b"/>
+        </record>
+
+        <record id="op_c_qb4_a01" model="op.question.bank.answer">
+            <field name="name">Vitamin B</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb4"/>
+        </record>
+        <record id="op_c_qb4_a02" model="op.question.bank.answer">
+            <field name="name">Vitamin C</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb4"/>
+        </record>
+        <record id="op_c_qb4_a03" model="op.question.bank.answer">
+            <field name="name">Vitamin K</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="question_id" ref="op_c_qb4"/>
+        </record>
+        <record id="op_c_qb4_a04" model="op.question.bank.answer">
+            <field name="name">Vitamin E</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb4"/>
+        </record>
+
+        <record id="op_qz_ln6_b4" model="op.quiz.line">
+            <field name="name">Which of the following vitamins is needed for the process of blood clotting?</field>
+            <field name="mark" type="float">1.0</field>
+             <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/eI8kZIqa-VU'"/>
+            <field name="document_id">eI8kZIqa-VU</field>
+            <field name="quiz_id" ref="op_qz_biology1"/>
+            <field name="que_id" ref="op_c_qb4"/>
+        </record>
+
+        <record id="op_qz_ln6_b4_l01" model="op.quiz.answer">
+            <field name="name">Vitamin B</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b4"/>
+        </record>
+        <record id="op_qz_ln6_b4_l02" model="op.quiz.answer">
+            <field name="name">Vitamin C</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b4"/>
+        </record>
+        <record id="op_qz_ln6_b4_l03" model="op.quiz.answer">
+            <field name="name">Vitamin K</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="line_id" ref="op_qz_ln6_b4"/>
+        </record>
+        <record id="op_qz_ln6_b4_l04" model="op.quiz.answer">
+            <field name="name">Vitamin E</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b4"/>
+        </record>
+
+        <record id="op_c_qb55" model="op.question.bank.line">
+            <field name="name">What percentage of the human body is water?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/esS4AnKIt7k'"/>
+            <field name="document_id">esS4AnKIt7k</field>
+            <field name="bank_id" ref="op_qu_bnk_b"/>
+        </record>
+        <record id="op_c_qb55_a01" model="op.question.bank.answer">
+            <field name="name">50%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb55"/>
+        </record>
+        <record id="op_c_qb55_a02" model="op.question.bank.answer">
+            <field name="name">60%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="question_id" ref="op_c_qb55"/>
+        </record>
+        <record id="op_c_qb55_a03" model="op.question.bank.answer">
+            <field name="name">75%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb55"/>
+        </record>
+        <record id="op_c_qb55_a04" model="op.question.bank.answer">
+            <field name="name">80%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="question_id" ref="op_c_qb55"/>
+        </record>
+
+        <record id="op_qz_ln6_b55" model="op.quiz.line">
+            <field name="name">What percentage of the human body is water?</field>
+            <field name="mark" type="float">1.0</field>
+            <field name="material_type">video</field>
+            <field name="video_type">youtube</field>
+            <field name="url"
+                   eval="'https://youtu.be/esS4AnKIt7k'"/>
+            <field name="document_id">esS4AnKIt7k</field>
+            <field name="quiz_id" ref="op_qz_biology1"/>
+            <field name="que_id" ref="op_c_qb55"/>
+        </record>
+
+        <record id="op_qz_ln6_b55_l01" model="op.quiz.answer">
+            <field name="name">50%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b55"/>
+        </record>
+        <record id="op_qz_ln6_b55_l02" model="op.quiz.answer">
+            <field name="name">60%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_100p_p"/>
+            <field name="line_id" ref="op_qz_ln6_b55"/>
+        </record>
+        <record id="op_qz_ln6_b55_l03" model="op.quiz.answer">
+            <field name="name">75%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b55"/>
+        </record>
+        <record id="op_qz_ln6_b55_l04" model="op.quiz.answer">
+            <field name="name">80%</field>
+            <field name="grade_id" ref="openeducat_quiz.op_ans_grd_0p"/>
+            <field name="line_id" ref="op_qz_ln6_b55"/>
+        </record>
+    </data>
+</odoo>

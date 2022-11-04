@@ -1,0 +1,23 @@
+<odoo>
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/openeducat_online_appointment/static/src/scss/custom.scss" />
+            <link rel="stylesheet" type="text/scss" href="/openeducat_online_appointment/static/src/scss/simple-calendar.scss" />
+            <link rel="stylesheet" type="text/css" href="/openeducat_online_appointment/static/src/css/rangecalendar.css" />
+            <link rel="stylesheet" type="text/css" href="/openeducat_online_appointment/static/src/css/style.css" />
+            <script type="text/javascript" src="/openeducat_online_appointment/static/src/tests/tours/booking_test.js"></script>
+            <script type="text/javascript" src="/openeducat_online_appointment/static/src/tests/tours/booking_cancel_test.js"></script>
+        </xpath>
+
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/openeducat_online_appointment/static/src/js/custom.js"></script>
+            <script type="text/javascript" src="/openeducat_online_appointment/static/src/js/jquery.rangecalendar.js"></script>
+            <script type="text/javascript" src="/openeducat_online_appointment/static/src/js/jquery.simple-calendar.js"></script>
+        </xpath>
+    </template>
+    <template id="assets_backend_" inherit_id="website.assets_backend">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/openeducat_online_appointment/static/src/js/appointment_access_url.js"></script>
+        </xpath>
+    </template>
+</odoo>
