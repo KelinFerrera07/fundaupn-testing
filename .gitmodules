@@ -2,3 +2,8 @@
 	path = d2isolutions/l10n_hn_accounting
 	url = git@github.com:d2isolutions/l10n_hn_accounting.git
 	branch = 14.0
+
+[submodule "OCA/operating-unit"]
+	path = OCA/operating-unit
+	url = git@github.com:OCA/operating-unit.git
+	branch = 14.0
